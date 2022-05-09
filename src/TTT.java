@@ -172,10 +172,12 @@ public class TTT extends JPanel {
 	private void checkWinner() {
 		
 		if(rowWin() || columnWin() || diagonalWin()) {
-			if(playerTurn)
+			if(playerTurn) {
 				JOptionPane.showMessageDialog(null, "X wins");
-			else
+			}
+			else {
 				JOptionPane.showMessageDialog(null, "O wins");
+			}
 	
 			
 			int option = JOptionPane.showConfirmDialog(null, "Would you like to play again?");
